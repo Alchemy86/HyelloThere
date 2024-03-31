@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 
 import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "./globals.css";
-import StreamVideoProvider from "@/providers/StremClientProvider";
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,9 +39,8 @@ export default function RootLayout({
       >
 
         <body className={`${inter.className} bg-dark-2`}>
-        <StreamVideoProvider>
           {children}
-          </StreamVideoProvider>
+          <Toaster />
         </body>
 
       </ClerkProvider>
