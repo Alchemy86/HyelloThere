@@ -1,10 +1,12 @@
 import StreamVideoProvider from '@/providers/StremClientProvider';
 import { ReactNode } from 'react';
 
+//NOT BEING PICKED UP - no idea why
+
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <main>
-      <StreamVideoProvider>FECKKKK {children}</StreamVideoProvider>
+      <StreamVideoProvider>{children}</StreamVideoProvider>
     </main>
   );
 };
