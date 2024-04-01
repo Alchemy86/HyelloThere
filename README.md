@@ -15,6 +15,10 @@ First app setup test for Hyello applications.
 - [shadcn](https://ui.shadcn.com/docs)
 - Tailwind CSS
 
+## <a name="bugs">🔋 Bugs</a>
+
+👉 **Camera Use**: Ending a call / navigating isnt dropping use of Camera.. Component cleanup?
+
 ## <a name="features">🔋 Features</a>
 
 
