@@ -14,7 +14,6 @@ const StreamVideoProvider = ({ children }: { children: ReactNode }) => {
   const { user, isLoaded } = useUser();
 
   useEffect(() => {
-    console.log('KEYS');
     if (!isLoaded || !user) return;
     if (!API_KEY) throw new Error('Stream API key is missing');
 

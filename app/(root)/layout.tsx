@@ -1,4 +1,4 @@
-import StreamVideoProvider from '@/providers/StremClientProvider';
+import StreamVideoProvider from '@/providers/StreamClientProvider';
 import { ReactNode } from 'react';
 
 //NOT BEING PICKED UP - no idea why
