@@ -7,6 +7,9 @@ import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import 'react-datepicker/dist/react-datepicker.css';
+import Mava from "@/components/MavaHeader";
+import Head from "next/head";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +26,13 @@ export default function RootLayout({
 }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
+
+
+      <head>
+        <Mava />
+
+      </head>
+
       <ClerkProvider
         appearance={{
           layout: {
