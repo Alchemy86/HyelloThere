@@ -1,3 +1,4 @@
+import Mava from '@/components/MavaHeader';
 import StreamVideoProvider from '@/providers/StreamClientProvider';
 import { ReactNode } from 'react';
 
@@ -6,6 +7,7 @@ import { ReactNode } from 'react';
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <main>
+      <Mava />
       <StreamVideoProvider>{children}</StreamVideoProvider>
     </main>
   );
