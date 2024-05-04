@@ -10,23 +10,21 @@ const nextConfig = {
 
   // Define custom rewrites
   // Ensure to use 'rewrites' from 'next/dist/next-server/server/config'
-  rewrites() {
-    return {
-      beforeFiles: [
-        // Rewrite rule for booking.hyello.co.uk
-        {
-          source: '/:path*',
-          has: [
-            {
-              type: 'host',
-              value: 'booking.hyello.co.uk',
-            },
-          ],
-          destination: '/booking/:path*', // Point to the 'pages/booking' directory
-        },
-      ],
-    }
+  async rewrites() {
+    return [
+      {
+        // Rewrite rule for booking.hyello.co.uk and all paths beyond it
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'booking.hyello.co.uk',
+          },
+        ],
+        destination: '/booking/:path*', // Point to the 'pages/booking' directory
+      },
+    ];
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
