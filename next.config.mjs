@@ -1,6 +1,3 @@
-// Import the 'rewrites' function from 'next/dist/next-server/server/config'
-import { rewrites } from 'next/dist/next-server/server/config'
-
 const nextConfig = {
   images: {
     remotePatterns: [
