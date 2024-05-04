@@ -23,6 +23,17 @@ const nextConfig = {
         ],
         destination: '/booking/:path*', // Point to the 'pages/booking' directory
       },
+      {
+        // Additional rewrite rule to handle the root path
+        source: '/',
+        has: [
+          {
+            type: 'host',
+            value: 'booking.hyello.co.uk',
+          },
+        ],
+        destination: '/booking', // Point to the 'pages/booking/index.js' file
+      },
     ];
   },
 };
