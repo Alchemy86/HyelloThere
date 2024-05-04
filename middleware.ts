@@ -11,6 +11,7 @@ const protectedRoute = createRouteMatcher([
   '/previous',
   '/recordings',
   '/personal-room',
+  '/booking(.*)'
 ]);
 
 export default clerkMiddleware((auth, req) => {
@@ -20,7 +21,6 @@ export default clerkMiddleware((auth, req) => {
 export const config = {
   matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
 };
-
 
 
 // RegExp for public files
