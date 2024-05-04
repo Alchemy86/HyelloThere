@@ -14,7 +14,7 @@ const nextConfig = {
     return [
       {
         // Rewrite rule for the root path of booking.hyello.co.uk
-        source: '',
+        source: '/',
         has: [
           {
             type: 'host',
