@@ -13,7 +13,18 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        // Rewrite rule for booking.hyello.co.uk and all paths beyond it
+        // Rewrite rule for the root path of booking.hyello.co.uk
+        source: '',
+        has: [
+          {
+            type: 'host',
+            value: 'booking.hyello.co.uk',
+          },
+        ],
+        destination: '/booking', // Point to the 'pages/booking/index.js' file
+      },
+      {
+        // Rewrite rule for all paths beyond the root
         source: '/:path*',
         has: [
           {
@@ -22,17 +33,6 @@ const nextConfig = {
           },
         ],
         destination: '/booking/:path*', // Point to the 'pages/booking' directory
-      },
-      {
-        // Additional rewrite rule to handle the root path
-        source: '/',
-        has: [
-          {
-            type: 'host',
-            value: 'booking.hyello.co.uk',
-          },
-        ],
-        destination: '/booking', // Point to the 'pages/booking/index.js' file
       },
     ];
   },
