@@ -18,7 +18,7 @@ const clerkMiddlewareInstance = clerkMiddleware((auth, req) => {
 
   // Skip public files
   const PUBLIC_FILE = /\.(.*)$/; // Files
-  if (PUBLIC_FILE.test(url.pathname) || url.pathname.includes('_next')) return NextResponse.next();
+  if (PUBLIC_FILE.test(url.pathname) || url.pathname.includes('_next') || url.pathname.includes('sign-')) return NextResponse.next();
 
   // Check if the request matches a protected route
   if (protectedRoute(req)) auth().protect();
