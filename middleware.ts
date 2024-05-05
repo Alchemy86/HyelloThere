@@ -35,7 +35,7 @@ const clerkMiddlewareInstance = clerkMiddleware(async (auth, req) => {
   }
 
   // only let me hit the apis directly. haha.
-  if (url.pathname.startsWith('/api/google')) {
+  if (url.pathname.includes('api/')) {
     const user = await clerkClient.users.getUser(userId);
     const email = user.emailAddresses[0].emailAddress;
   
