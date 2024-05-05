@@ -1,27 +1,40 @@
 export const sidebarLinks = [
     {
-        lable: 'Home',
+        label: 'Home',
         route: '/',
         imgUrl: '/icons/home.svg'
     },
     {
-        lable: 'Upcoming',
+        label: 'Upcoming',
         route: '/upcoming',
         imgUrl: '/icons/upcoming.svg'
     },
     {
-        lable: 'Previous',
+        label: 'Previous',
         route: '/previous',
         imgUrl: '/icons/previous.svg'
     },
     {
-        lable: 'Recordings',
+        label: 'Recordings',
         route: '/recordings',
         imgUrl: '/icons/recordings.svg'
     },{
-        lable: 'Personal Room',
+        label: 'Personal Room',
         route: '/personal-room',
         imgUrl: '/icons/add-personal.svg'
+    }
+]
+
+export const bookingSidebarLinks = [
+    {
+        label: 'Home',
+        route: '/',
+        imgUrl: '/icons/home.svg'
+    },
+    {
+        label: 'Calendar',
+        route: '/Calendar',
+        imgUrl: '/icons/upcoming.svg'
     }
 ]
 

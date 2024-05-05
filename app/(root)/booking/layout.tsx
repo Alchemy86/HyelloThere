@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
+import { bookingSidebarLinks } from '@/constants'
 import React, { ReactNode } from 'react'
 
 const HomeLayout = ( {children} : { children: ReactNode}) => {
@@ -9,7 +10,7 @@ const HomeLayout = ( {children} : { children: ReactNode}) => {
 
 
         <div className='flex'>
-            <Sidebar />
+            <Sidebar sidebarLinks={bookingSidebarLinks}/>
 
             <section className='flex min-h-screen flex-1 flex-col px-6 pd-6 pt-28 max-md:pb-14 sm:px-14'>
 
