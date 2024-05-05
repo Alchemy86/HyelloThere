@@ -1,4 +1,3 @@
-
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -7,7 +6,7 @@ const nextConfig = {
         hostname: 'img.clerk.com',
       },
     ],
-  }
-}
+  },
+};
 
 export default nextConfig;
