@@ -33,7 +33,7 @@ export const bookingSidebarLinks = [
     },
     {
         label: 'Calendar',
-        route: '/Calendar',
+        route: '/calendar',
         imgUrl: '/icons/upcoming.svg'
     }
 ]

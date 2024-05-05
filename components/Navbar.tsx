@@ -4,7 +4,13 @@ import React from 'react'
 import MobileNav from './MobileNav'
 import { SignedIn, UserButton } from '@clerk/nextjs'
 
-const Navbar = () => {
+interface SidebarLink {
+    label: string;
+    route: string;
+    imgUrl: string;
+  }
+
+const Navbar = ({ sidebarLinks }: { sidebarLinks: SidebarLink[] }) => {
   return (
     <nav className='flex-between fixed z-50 w-full
     bg-dark-1 px-6 py-4 lg:px-10'>
@@ -32,7 +38,7 @@ const Navbar = () => {
                 <UserButton></UserButton>
             </SignedIn>
             
-            <MobileNav/>
+            <MobileNav sidebarLinks={sidebarLinks}/>
         </div>
 
     </nav>
