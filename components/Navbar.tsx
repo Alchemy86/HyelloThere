@@ -24,7 +24,7 @@ const Navbar = ({ sidebarLinks }: { sidebarLinks: SidebarLink[] }) => {
                 src='/icons/logo.svg'
                 width={32}
                 height={32}
-                alt='Yhello'
+                alt='Hyello'
                 className='max-sm:size-10'
             ></Image>
             <p 
