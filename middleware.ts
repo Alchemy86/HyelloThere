@@ -13,7 +13,8 @@ const protectedRoute = createRouteMatcher([
   '/previous',
   '/recordings',
   '/personal-room',
-  '/booking(.*)'
+  '/booking(.*)',
+  '/api'
 ]);
 
 const clerkMiddlewareInstance = clerkMiddleware(async (auth, req) => {
